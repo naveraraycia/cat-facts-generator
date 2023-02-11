@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Custom Font -->
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'sans': ['Nunito', 'sans-serif']
+        },
+        extend: {
+          colors: {
+            primary: '#FDF2F2',
+            secondary: '#F9C4C3',
+            tertiary: '#B6666F'
+          }
+        }
+      }
+    }
+  </script>
+  <title>Cat Facts Generator</title>
+</head>
+<body class="bg-secondary">
+  <section id="cat" class="flex flex-col justify-center items-center w-full my-10 space-y-10 p-[1rem]">
+    <h1 class="font-sans text-5xl text-primary uppercase">cat facts</h1>
+
+    <img src="https://cataas.com/cat/gif" alt="cat photo" class="w-[200px] h-[200px] border-[7px] border-white rounded-full object-cover object-center lg:w-[250px] lg:h-[250px]">
+
+    <p class="font-sans text-2xl max-w-4xl text-primary text-center leading-[140.9%] md:text-3xl">"<span id="cat-fact"></span>"</p>
+
+    <button id="generate" type="button" class="py-5 px-[62px] bg-primary border-[3.5px] border-tertiary rounded-lg text-tertiary font-sans capitalize text-xl hover:bg-tertiary hover:text-primary hover:border-primary">Generate Fact!</button>
+    
+  </section>
+  
+</body>
+
+<script src="app.js"></script>
+</html>
