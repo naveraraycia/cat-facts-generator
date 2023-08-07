@@ -14,6 +14,7 @@ The website is built with the following technologies:
 - CSS
 - JavaScript
 - Tailwind CSS
+- AJAX
 
 ## Features
 ### Generate Cat Facts
